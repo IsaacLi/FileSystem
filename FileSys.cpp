@@ -11,6 +11,7 @@ void FileSys::SetDiscName (string newName)
 
 /*	Read Super Block from disc and update FileSys members in memory	*/
 void FileSys::GetSBInfo() {
+
 	int success = readblock(this->discID, SB_ADDRESS, &(this->FSHeader));
 	if (success == 0)
 		cout << "Error reading superblock\n";

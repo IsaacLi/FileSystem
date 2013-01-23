@@ -93,7 +93,7 @@ void FreeBlockQueue::FreeBlock(blockNum blockToFree) {
 			this->pHead = pNewNode;
 		else
 			this->pTail->pNext = pNewNode;
-		this->pTail = pNewNode;
+		this->pTail = pNewNode
 		this->fbqHeader.freeBlockLocs[count] = blockToFree;
 		this->count++;
 		bool saved = this->SaveFBQ();
